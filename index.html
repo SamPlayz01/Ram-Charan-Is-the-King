@@ -1,1 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ram Charan — The Man. The Legacy. The Cinema.</title>
+<meta name="description" content="An official-style cinematic fan tribute to Ram Charan — actor, dancer, producer and global icon of Indian cinema.">
 
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-reel">
+    <div class="reel-circle"></div>
+    <div class="reel-circle"></div>
+  </div>
+  <div class="loader-text">RAM&nbsp;CHARAN</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ============ CUSTOM CURSOR (desktop only) ============ -->
+<div id="custom-cursor" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header id="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="#home" class="logo">RAM<span>CHARAN</span></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#filmography" class="nav-link" data-section="filmography">Filmography</a></li>
+      <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+      <li><a href="#awards" class="nav-link" data-section="awards">Awards</a></li>
+      <li><a href="#timeline" class="nav-link" data-section="timeline">Timeline</a></li>
+      <li><a href="#news" class="nav-link" data-section="news">News</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button id="sound-toggle" aria-pressed="false" aria-label="Toggle cinematic sound effects">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+      <button id="hamburger" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title" id="hero-title" aria-label="RAM CHARAN">
+        <!-- letters injected by JS -->
+      </h1>
+      <p class="hero-subtitle">THE MAN. THE LEGACY. THE CINEMA.</p>
+      <p class="hero-roles">Indian Actor &nbsp;|&nbsp; Producer &nbsp;|&nbsp; Entrepreneur</p>
+
+      <div class="hero-buttons">
+        <a href="#timeline" class="btn btn-gold">
+          <span>Explore His Journey</span>
+          <i class="fa-solid fa-arrow-right btn-arrow"></i>
+        </a>
+        <a href="#filmography" class="btn btn-outline">
+          <span>Discover His Films</span>
+          <i class="fa-solid fa-film btn-arrow"></i>
+        </a>
+      </div>
+    </div>
+
+    <button class="scroll-indicator" id="scroll-indicator" aria-label="Scroll to About section">
+      <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+      <span class="scroll-label">SCROLL</span>
+    </button>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">The Man Behind the Legend</h2>
+
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <div class="portrait-frame">
+            <div class="poster-placeholder portrait-placeholder">
+              <i class="fa-solid fa-user-large"></i>
+              <span>Portrait</span>
+            </div>
+            <div class="frame-corner tl"></div>
+            <div class="frame-corner br"></div>
+          </div>
+          <div class="floating-badge badge-1"><i class="fa-solid fa-star"></i> Global Icon</div>
+          <div class="floating-badge badge-2"><i class="fa-solid fa-clapperboard"></i> Since 2007</div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="lede">
+            Konidela Ram Charan, born <strong>27 March 1985</strong>, is an Indian actor, dancer,
+            producer and entrepreneur widely regarded as one of the most influential stars of
+            Telugu cinema and Indian cinema at large.
+          </p>
+          <p>
+            Son of megastar <strong>Chiranjeevi</strong> and <strong>Surekha</strong>, Ram Charan
+            made his acting debut with <strong>Chirutha (2007)</strong> and achieved his first
+            major breakthrough with <strong>Magadheera (2009)</strong>, a film that redefined
+            Telugu action cinema for a generation. He went on to headline era-defining films such
+            as <strong>Rangasthalam (2018)</strong>, a critically acclaimed performance that
+            remains a career milestone, before reaching a new level of global recognition through
+            S. S. Rajamouli's <strong>RRR</strong>, alongside Jr. NTR.
+          </p>
+          <p>
+            Beyond acting, Ram Charan is an active film producer and entrepreneur, with ventures
+            spanning production and business, continuing his family's long legacy in Telugu
+            cinema while building an identity distinctly his own.
+          </p>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <i class="fa-solid fa-id-card"></i>
+              <h3>Full Name</h3>
+              <p>Konidela Ram Charan</p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-cake-candles"></i>
+              <h3>Born</h3>
+              <p>27 March 1985</p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-masks-theater"></i>
+              <h3>Profession</h3>
+              <p>Actor, Dancer, Producer</p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-clapperboard"></i>
+              <h3>Debut Film</h3>
+              <p>Chirutha (2007)</p>
+            </div>
+          </div>
+
+          <div class="stats-row" id="stats-row">
+            <div class="stat">
+              <span class="stat-number" data-target="18">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years in Cinema</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Feature Films</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="1">0</span>
+              <span class="stat-label">Global Phenomenon: RRR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILMOGRAPHY ============ -->
+  <section id="filmography" class="section filmography-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">The Cinematic Universe</h2>
+
+      <div class="filter-bar reveal" id="filter-bar" role="tablist" aria-label="Filter films by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="action" role="tab" aria-selected="false">Action</button>
+        <button class="filter-btn" data-filter="drama" role="tab" aria-selected="false">Drama</button>
+        <button class="filter-btn" data-filter="historical" role="tab" aria-selected="false">Historical</button>
+        <button class="filter-btn" data-filter="recent" role="tab" aria-selected="false">Recent Films</button>
+      </div>
+
+      <div class="movie-grid" id="movie-grid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- Movie modal -->
+  <div class="modal-overlay" id="movie-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-poster">
+        <div class="poster-placeholder" id="modal-poster-placeholder"><i class="fa-solid fa-film"></i></div>
+      </div>
+      <div class="modal-info">
+        <span class="modal-year" id="modal-year"></span>
+        <h3 id="modal-title"></h3>
+        <p class="modal-character" id="modal-character"></p>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="section gallery-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Beyond the Screen</h2>
+      <p class="section-sub reveal">Movie moments, red carpets, promotional events and cinematic portraits.</p>
+
+      <div class="masonry-grid" id="masonry-grid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <div class="poster-placeholder lightbox-placeholder" id="lightbox-placeholder"><i class="fa-solid fa-image"></i></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- ============ AWARDS ============ -->
+  <section id="awards" class="section awards-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">A Legacy of Excellence</h2>
+
+      <div class="awards-tabs reveal">
+        <span class="awards-tab-label">Personal Awards (Ram Charan)</span>
+      </div>
+      <div class="awards-grid" id="personal-awards-grid"></div>
+
+      <div class="awards-tabs reveal" style="margin-top:3rem;">
+        <span class="awards-tab-label film-tag">Recognitions for Films He Starred In</span>
+      </div>
+      <div class="awards-grid" id="film-awards-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="timeline" class="section timeline-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">The Journey Through Time</h2>
+      <div class="timeline" id="timeline-list"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section id="news" class="section news-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Latest From the World of Ram Charan</h2>
+      <p class="section-sub reveal">Featured updates — not a live news feed.</p>
+      <div class="news-grid" id="news-grid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / SOCIAL ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Follow The Journey</h2>
+      <p class="section-sub reveal">Official verified channels.</p>
+
+      <div class="social-grid reveal">
+        <a class="social-card" href="https://www.instagram.com/alwaysramcharan/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a class="social-card" href="https://www.facebook.com/AlwaysRamCharan/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-facebook"></i><span>Facebook</span>
+        </a>
+        <a class="social-card" href="https://x.com/AlwaysRamCharan" target="_blank" rel="noopener">
+          <i class="fa-brands fa-x-twitter"></i><span>X</span>
+        </a>
+        <a class="social-card" href="https://www.youtube.com/@AlwaysRamCharan" target="_blank" rel="noopener">
+          <i class="fa-brands fa-youtube"></i><span>YouTube</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo footer-logo">RAM<span>CHARAN</span></a>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#filmography">Filmography</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/alwaysramcharan/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/AlwaysRamCharan/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/AlwaysRamCharan" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.youtube.com/@AlwaysRamCharan" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p class="footer-copy">This is an unofficial fan tribute. &copy; <span id="footer-year"></span> — Made with respect for Indian cinema.</p>
+  </div>
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
